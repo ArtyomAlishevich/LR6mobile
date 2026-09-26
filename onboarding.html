@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>TaskFlow — Знакомство</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="onboarding-page">
+<header class="top-bar">
+  <span class="wordmark mono" style="font-family:var(--font-display);font-weight:600;">TaskFlow</span>
+  <a class="skip" href="index.html">Пропустить</a>
+</header>
+<main class="track" id="track">
+  <section class="slide">
+    <div class="art">
+      <svg viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="20" y="16" width="70" height="90" rx="3" fill="#e4ebe4" stroke="#3f5d48" stroke-width="1.5"/>
+        <rect x="34" y="30" width="42" height="5" rx="2.5" fill="#3f5d48"/>
+        <rect x="34" y="44" width="42" height="5" rx="2.5" fill="#8fa38f"/>
+        <rect x="34" y="58" width="30" height="5" rx="2.5" fill="#8fa38f"/>
+        <rect x="105" y="34" width="70" height="90" rx="3" fill="#f7ecd6" stroke="#d9a441" stroke-width="1.5"/>
+        <rect x="119" y="48" width="42" height="5" rx="2.5" fill="#d9a441"/>
+        <rect x="119" y="62" width="42" height="5" rx="2.5" fill="#e2c07f"/>
+      </svg>
+    </div>
+    <h2>Учёба и личное — рядом</h2>
+    <p>Дисциплины, дедлайны и бытовые дела живут в одной ленте, каждая категория — со своим цветом.</p>
+  </section>
+  <section class="slide">
+    <div class="art">
+      <svg viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="70" r="52" fill="none" stroke="#d9d4c7" stroke-width="10"/>
+        <path d="M100 18a52 52 0 0 1 45 78" fill="none" stroke="#3f5d48" stroke-width="10" stroke-linecap="round"/>
+        <text x="100" y="76" text-anchor="middle" font-family="JetBrains Mono" font-size="20" fill="#232922">09:30</text>
+      </svg>
+    </div>
+    <h2>Напоминания приходят вовремя</h2>
+    <p>TaskFlow подскажет о задаче заранее — вы сами выбираете, за сколько до срока.</p>
+  </section>
+  <section class="slide">
+    <div class="art">
+      <svg viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="30" y="20" width="140" height="20" rx="3" fill="#e4ebe4"/>
+        <rect x="30" y="20" width="98" height="20" rx="3" fill="#3f5d48"/>
+        <rect x="30" y="50" width="140" height="20" rx="3" fill="#f7ecd6"/>
+        <rect x="30" y="50" width="60" height="20" rx="3" fill="#d9a441"/>
+        <rect x="30" y="80" width="140" height="20" rx="3" fill="#f5e2dc"/>
+        <rect x="30" y="80" width="30" height="20" rx="3" fill="#b5533c"/>
+        <text x="30" y="118" font-family="JetBrains Mono" font-size="13" fill="#5b6157">7 / 10 задач на этой неделе</text>
+      </svg>
+    </div>
+    <h2>Видно, где вы застряли</h2>
+    <p>Прогресс по каждой категории — на одном экране, без отдельных отчётов и таблиц.</p>
+  </section>
+</main>
+<nav class="dots" aria-label="Слайды">
+  <span class="dot active"></span><span class="dot"></span><span class="dot"></span>
+</nav>
+<footer class="bottom-bar">
+  <button class="btn-primary" type="button" onclick="location.href='index.html'">Начать</button>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

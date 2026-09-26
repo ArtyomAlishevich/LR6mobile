@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>TaskFlow — Сегодня</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dot-grid dashboard-page">
+<div class="shell">
+  <aside class="sidebar">
+    <header class="dash-top">
+      <div class="greeting">
+        <h1>Здравствуйте, Артём</h1>
+        <p class="date mono">Пятница, 12 сентября</p>
+      </div>
+      <div class="avatar">А</div>
+    </header>
+    <div class="progress-strip">
+      <svg class="ring" viewBox="0 0 46 46">
+        <circle cx="23" cy="23" r="18" fill="none" stroke="#d9d4c7" stroke-width="6"/>
+        <circle cx="23" cy="23" r="18" fill="none" stroke="#3f5d48" stroke-width="6"
+          stroke-dasharray="113" stroke-dashoffset="34" stroke-linecap="round" transform="rotate(-90 23 23)"/>
+      </svg>
+      <p class="txt"><strong>3 из 8</strong> задач сегодня выполнено</p>
+    </div>
+    <nav class="tabs" aria-label="Категории">
+      <button class="tab all active">Все</button>
+      <button class="tab study">Учёба</button>
+      <button class="tab personal">Личное</button>
+      <button class="tab work">Работа</button>
+    </nav>
+  </aside>
+  <main class="task-list">
+    <section>
+      <h3 class="group-label mono">Просрочено</h3>
+      <article class="card tab-rust task-card overdue">
+        <input type="checkbox">
+        <div class="body">
+          <div class="top-row"><span class="title">Оплатить интернет</span><span class="time">вчера</span></div>
+          <p class="meta">Личное</p>
+        </div>
+      </article>
+    </section>
+    <section>
+      <h3 class="group-label mono">Сегодня</h3>
+      <article class="card tab-moss task-card">
+        <input type="checkbox">
+        <div class="body">
+          <div class="top-row"><a class="title" href="task-detail.html">Сдать курсовую по БД</a><span class="time">18:00</span></div>
+          <p class="meta">Учёба · 2 из 4 подзадач</p>
+        </div>
+      </article>
+      <article class="card tab-work task-card">
+        <input type="checkbox">
+        <div class="body">
+          <div class="top-row"><span class="title">Отправить отчёт руководителю</span><span class="time">15:30</span></div>
+          <p class="meta">Работа</p>
+        </div>
+      </article>
+      <article class="card tab-ochre task-card">
+        <input type="checkbox" checked>
+        <div class="body">
+          <div class="top-row"><span class="title" style="text-decoration:line-through;color:var(--ink-soft);">Забрать посылку</span><span class="time">12:00</span></div>
+          <p class="meta">Личное</p>
+        </div>
+      </article>
+    </section>
+    <section>
+      <h3 class="group-label mono">Завтра</h3>
+      <article class="card tab-moss task-card">
+        <input type="checkbox">
+        <div class="body">
+          <div class="top-row"><span class="title">Семинар по матанализу — подготовить вопросы</span><span class="time">10:00</span></div>
+          <p class="meta">Учёба</p>
+        </div>
+      </article>
+    </section>
+  </main>
+</div>
+<button class="fab" type="button" aria-label="Добавить задачу">+</button>
+<script src="js/main.js"></script>
+</body>
+</html>

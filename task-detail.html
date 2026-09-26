@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>TaskFlow — Задача</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dot-grid">
+<header class="detail-top">
+  <a class="back" href="dashboard.html" aria-label="Назад">←</a>
+  <span class="crumb">Учёба / Курсовая по БД</span>
+</header>
+<main class="detail-main tab-moss">
+  <div class="two-col">
+    <section>
+      <div class="tab-strip"></div>
+      <span class="badge">Учёба</span>
+      <h1 class="task-title">Сдать курсовую работу по проектированию БД</h1>
+      <p class="due mono">⏰ Срок: завтра, 18:00</p>
+      <p class="desc">Финальная версия пояснительной записки и ER-диаграммы. Отправить научному руководителю на проверку перед загрузкой в личный кабинет университета.</p>
+      <section class="block">
+        <h3 class="block-title">Подзадачи · 2 / 4</h3>
+        <ul class="checklist">
+          <li class="done"><input type="checkbox" checked><span>Нормализовать схему до 3НФ</span></li>
+          <li class="done"><input type="checkbox" checked><span>Собрать список источников</span></li>
+          <li><input type="checkbox"><span>Согласовать введение с руководителем</span></li>
+          <li><input type="checkbox"><span>Загрузить финальный PDF</span></li>
+        </ul>
+      </section>
+    </section>
+    <aside>
+      <section class="block">
+        <h3 class="block-title">Файлы</h3>
+        <div class="attachment"><span class="ext">PDF</span> Пояснительная_записка_v3.pdf</div>
+        <div class="attachment"><span class="ext">PNG</span> ER-диаграмма.png</div>
+      </section>
+      <section class="block">
+        <h3 class="block-title">Заметка</h3>
+        <p class="desc" style="margin-bottom:0;">Руководитель просил уточнить связь между таблицами «Заказы» и «Клиенты» — исправить перед сдачей.</p>
+      </section>
+    </aside>
+  </div>
+  <div class="action-row">
+    <button class="btn-primary" type="button">Отметить выполненной</button>
+    <button class="btn-ghost" type="button">Изменить</button>
+  </div>
+</main>
+<script src="js/main.js"></script>
+</body>
+</html>
